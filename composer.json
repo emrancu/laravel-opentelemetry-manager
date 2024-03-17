@@ -1,0 +1,42 @@
+{
+  "name": "lravel/opentelemetry-manager",
+  "description": "Laravel Open Telemetry Manager",
+  "keywords": [
+    "laravel",
+    "opentelemetry"
+  ],
+  "authors": [
+    {
+      "name": "AL EMRAN",
+      "email": "emrancu1@gmail.com"
+    }
+  ],
+  "require": {
+    "open-telemetry/opentelemetry": "^1.0",
+    "php-http/guzzle7-adapter": "^1.0",
+    "psr/http-client-implementation": "*"
+  },
+  "license": "MIT",
+  "autoload": {
+    "files": [
+      "src/Supports/global_functions.php"
+    ],
+    "psr-4": {
+      "OpenTelemetryManager\\": "/src"
+      }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "OpenTelemetryManager\\OpenTelemetryServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "laravel/opentelemetry-manager",
+  "name": "opentelemetry-manager/laravel",
   "description": "Laravel Open Telemetry Manager",
   "keywords": [
     "laravel",
